@@ -132,8 +132,8 @@ img {
   opacity: 0.7;
 }
 
-.team  img {
-    border-radius: 50%;
+.team img {
+  border-radius: 50%;
 }
 
 /* Callback form */
@@ -163,8 +163,8 @@ img {
 }
 
 .callback-form .btn {
-    padding: 12px 0;
-    margin-top: 20px;
+  padding: 12px 0;
+  margin-top: 20px;
 }
 
 /* Footer */
@@ -184,5 +184,36 @@ img {
   color: #28a745;
 }
 .footer .social > * {
-    margin-right: 30px;
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+  .flex-items {
+    /* flex-direction: column; */
+    display: block;
+  }
+
+  .flex-columns .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .flex-grid .column {
+    flex: 50%;
+    max-width: 70%;
+  }
+  
+  .team img {
+    width: 70%;
+  }
 }
