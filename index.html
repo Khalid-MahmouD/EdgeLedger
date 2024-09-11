@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -10,6 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Welcome To EdgeLedger</title>
@@ -17,7 +22,7 @@
   <body id="home">
     <header class="hero">
       <!-- Navbar -->
-      <div id="navbar" class="navbar">
+      <div id="navbar" class="navbar top">
         <h1 class="logo">
           <span class="text-primary"
             ><i class="fas fa-book-open"></i> Edge </span
@@ -106,26 +111,82 @@
           <h4>This is what we do</h4>
           <h2>Business Cases</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            ullam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+            dolore!
           </p>
         </header>
         <div class="row">
           <div class="column">
-            <img src="./images/cases/cases1.jpg" alt="" />
-            <img src="./images/cases/cases2.jpg" alt="" />
+            <a
+              href="images/cases/cases1.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+              dolore!"
+            >
+              <img src="images/cases/cases1.jpg" alt="" />
+            </a>
+            <a
+              href="images/cases/cases2.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+              dolore!"
+            >
+              <img src="images/cases/cases2.jpg" alt="" />
+            </a>
           </div>
           <div class="column">
-            <img src="./images/cases/cases3.jpg" alt="" />
-            <img src="./images/cases/cases4.jpg" alt="" />
+            <a
+              href="images/cases/cases3.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+            dolore!"
+            >
+              <img src="images/cases/cases3.jpg" alt="" />
+            </a>
+            <a
+              href="images/cases/cases4.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+              dolore!"
+            >
+              <img src="images/cases/cases4.jpg" alt="" />
+            </a>
           </div>
           <div class="column">
-            <img src="./images/cases/cases5.jpg" alt="" />
-            <img src="./images/cases/cases6.jpg" alt="" />
+            <a
+              href="images/cases/cases5.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+            dolore!"
+            >
+              <img src="images/cases/cases5.jpg" alt="" />
+            </a>
+            <a
+              href="images/cases/cases6.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+              dolore!"
+            >
+              <img src="images/cases/cases6.jpg" alt="" />
+            </a>
           </div>
           <div class="column">
-            <img src="./images/cases/cases7.jpg" alt="" />
-            <img src="./images/cases/cases8.jpg" alt="" />
+            <a
+              href="images/cases/cases7.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+            dolore!"
+            >
+              <img src="images/cases/cases7.jpg" alt="" />
+            </a>
+            <a
+              href="images/cases/cases8.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+              dolore!"
+            >
+              <img src="images/cases/cases8.jpg" alt="" />
+            </a>
           </div>
         </div>
       </section>
@@ -234,13 +295,21 @@
     </main>
 
     <footer class="footer bg-dark">
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-        </div>
-        <p>Copyright &copy; 2024 - EdgeLedger</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2024 - EdgeLedger</p>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
